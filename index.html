@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <title>API - AT</title>
+</head>
+<body>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6 col-md-offset-3">
+            <h1 class="text-center">Solicitud de Firma Electrónica</h1>
+            <hr>
+            <!--TODO: Editar la atributo for=""
+            //TODO: Agregar el atributo name en los input -->
+            <div class="form-group col-md-12">
+               <label for="exampleInputEmail1">Tipo de Solicitud</label>
+               <select class="form-control">
+                  <option value="">Seleccione Solicitud</option>
+                  <option value="1">PERSOA NATURAL</option>
+                  <option value="2">REPRESENTANTE LEGAL</option>
+                  <option value="3">MIEMBRO DE EMPRESA</option>
+                  <option value="4">PERSONA JURÍDICA (EMPRESA)</option>
+               </select>
+            </div>
+            <div class="form-group col-md-12">
+               <label for="exampleInputEmail1">Tipo de Contenedor</label>
+               <select class="form-control">
+                  <option value="">Seleccione Contenedor</option>
+                  <option value="0">ARCHIVO .P12</option>
+                  <option value="1">TOKEN</option>
+                  <option value="2">NUBE</option>
+               </select>
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Nombres</label>
+               <input type="text" class="form-control" placeholder="Calos Andres">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Primer Apellido</label>
+               <input type="text" class="form-control" placeholder="Cardenas">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Segundo Apellido</label>
+               <input type="text" class="form-control" placeholder="Pasquel">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Documento de Identidad</label>
+               <select class="form-control">
+                  <option value="">Seleccione Identidad</option>
+                  <option value="CEDULA">CEDULA</option>
+                  <option value="PASAPORTE">PASAPORTE</option>
+               </select>
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Número de documento</label>
+               <input type="text" class="form-control" placeholder="0102698867">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">RUC Personal</label>
+               <input type="text" class="form-control" placeholder="0102698867001">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Sexo</label>
+               <select class="form-control">
+                  <option value="">Seleccione Sexo</option>
+                  <option value="HOMBRE">HOMBRE</option>
+                  <option value="MUJER">MUJER</option>
+               </select>
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Fecha de Nacimiento</label>
+               <input type="date" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Nacionalidad</label>
+               <input type="text" class="form-control" placeholder="ECUATORIANA">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Teléfono Celular</label>
+               <input type="text" class="form-control" placeholder="0912345678">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Teléfono Fíjo</label>
+               <input type="text" class="form-control" placeholder="0912345678">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Correo</label>
+               <input type="email" class="form-control" placeholder="prueba@gmail.com">
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Provincia</label>
+               <select name="Provincia" class="form-control">
+                  <option value="Azuay" selected="selected">Seleccione Provincia</option> 
+                  <option value="Azuay">Azuay</option>  
+                  <option value="Cañar">Cañar</option>  
+                  <option value="Loja">Loja</option>  
+                  <option value="Carchi">Carchi</option>  
+                  <option value="Imbabura">Imbabura</option>  
+                  <option value="Pichincha">Pichincha</option>  
+                  <option value="Cotopaxi">Cotopaxi</option>  
+                  <option value="Tungurahua">Tungurahua</option>  
+                  <option value="Bolívar">Bolívar</option>  
+                  <option value="Chimborazo">Chimborazo</option>  
+                  <option value="Sto. Domingo de los Tsachilas">Sto. Domingo de los Tsachilas</option>  
+                  <option value="Esmeraldas">Esmeraldas</option>  
+                  <option value="Manabí">Manabí</option>  
+                  <option value="Guayas">Guayas</option>  
+                  <option value="Los Ríos">Los Ríos</option>  
+                  <option value="El Oro">El Oro</option>  
+                  <option value="Santa Elena">Santa Elena</option>  
+                  <option value="Sucumbíos">Sucumbíos</option>  
+                  <option value="Napo">Napo</option>  
+                  <option value="Pastaza">Pastaza</option>  
+                  <option value="Orellana">Orellana</option>  
+                  <option value="Morona Santiago">Morona Santiago</option>  
+                  <option value="Zamora Chinchipe">Zamora Chinchipe</option>  
+                  <option value="Galápagos">Galápagos</option>  
+                  <option value="Antártida Ecuatoriana">Antártida Ecuatoriana</option>  
+               </select>  
+            </div>
+            <div class="form-group col-md-6">
+               <label for="nombre">Ciudad</label>
+               <input type="text" class="form-control" placeholder="QUITO">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Dirección</label>
+               <input type="text" class="form-control" placeholder="Av. 10 DE AGOSTO N45-12 Y SELVA ALEGRE">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Vigencia de la Firma</label>
+               <select class="form-control">
+                  <option value="">Seleccione Vigencia</option>
+                  <option value="1 año">1 Año</option>
+                  <option value="2 años">2 Años</option>
+               </select>
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Foto Cédula Frontal</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Foto Cédula Posterior</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Foto Tipo Selfie</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Copia RUC</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Documento Adicional 1</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Documento Adicional 2</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Documento Adicional 3</label>
+               <input type="file" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+               <label for="nombre">Documento Adicional 4</label>
+               <input type="file" class="form-control">
+            </div>
+         </div>
+       </div>
+   </div>
+</body>
+</html>
