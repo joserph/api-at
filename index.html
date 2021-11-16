@@ -15,19 +15,19 @@
             <hr>
             <!--TODO: Editar la atributo for=""
             //TODO: Agregar el atributo name en los input -->
-            <div class="form-group col-md-12">
-               <label for="exampleInputEmail1">Tipo de Solicitud</label>
-               <select class="form-control">
+            <!--<div class="form-group col-md-12">
+               <label for="">Tipo de Solicitud</label>
+               <select class="form-control" name="tipo_solicitud">
                   <option value="">Seleccione Solicitud</option>
                   <option value="1">PERSOA NATURAL</option>
                   <option value="2">REPRESENTANTE LEGAL</option>
                   <option value="3">MIEMBRO DE EMPRESA</option>
                   <option value="4">PERSONA JURÍDICA (EMPRESA)</option>
                </select>
-            </div>
+            </div>-->
             <div class="form-group col-md-12">
-               <label for="exampleInputEmail1">Tipo de Contenedor</label>
-               <select class="form-control">
+               <label for="">Tipo de Contenedor</label>
+               <select class="form-control" name="contenedor">
                   <option value="">Seleccione Contenedor</option>
                   <option value="0">ARCHIVO .P12</option>
                   <option value="1">TOKEN</option>
@@ -36,19 +36,19 @@
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Nombres</label>
-               <input type="text" class="form-control" placeholder="Calos Andres">
+               <input type="text" name="nombres" class="form-control" placeholder="Calos Andres">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Primer Apellido</label>
-               <input type="text" class="form-control" placeholder="Cardenas">
+               <input type="text" name="apellido1" class="form-control" placeholder="Cardenas">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Segundo Apellido</label>
-               <input type="text" class="form-control" placeholder="Pasquel">
+               <input type="text" name="apellido2" class="form-control" placeholder="Pasquel">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Documento de Identidad</label>
-               <select class="form-control">
+               <select class="form-control" name="tipodocumento">
                   <option value="">Seleccione Identidad</option>
                   <option value="CEDULA">CEDULA</option>
                   <option value="PASAPORTE">PASAPORTE</option>
@@ -56,15 +56,15 @@
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Número de documento</label>
-               <input type="text" class="form-control" placeholder="0102698867">
+               <input type="text" name="numerodocumento" class="form-control" placeholder="0102698867">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">RUC Personal</label>
-               <input type="text" class="form-control" placeholder="0102698867001">
+               <input type="text" name="ruc_personal" class="form-control" placeholder="0102698867001">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Sexo</label>
-               <select class="form-control">
+               <select class="form-control" name="sexo">
                   <option value="">Seleccione Sexo</option>
                   <option value="HOMBRE">HOMBRE</option>
                   <option value="MUJER">MUJER</option>
@@ -72,27 +72,27 @@
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Fecha de Nacimiento</label>
-               <input type="date" class="form-control" placeholder="">
+               <input type="date" name="fecha_nacimiento" class="form-control" placeholder="">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Nacionalidad</label>
-               <input type="text" class="form-control" placeholder="ECUATORIANA">
+               <input type="text" name="nacionalidad" class="form-control" placeholder="ECUATORIANA">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Teléfono Celular</label>
-               <input type="text" class="form-control" placeholder="0912345678">
+               <input type="text" name="telfCelular" class="form-control" placeholder="0912345678">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Teléfono Fíjo</label>
-               <input type="text" class="form-control" placeholder="0912345678">
+               <input type="text" name="telfFijo" class="form-control" placeholder="0912345678">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Correo</label>
-               <input type="email" class="form-control" placeholder="prueba@gmail.com">
+               <input type="email" name="eMail" class="form-control" placeholder="prueba@gmail.com">
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Provincia</label>
-               <select name="Provincia" class="form-control">
+               <select name="provincia" class="form-control">
                   <option value="Azuay" selected="selected">Seleccione Provincia</option> 
                   <option value="Azuay">Azuay</option>  
                   <option value="Cañar">Cañar</option>  
@@ -123,15 +123,15 @@
             </div>
             <div class="form-group col-md-6">
                <label for="nombre">Ciudad</label>
-               <input type="text" class="form-control" placeholder="QUITO">
+               <input type="text" name="ciudad" class="form-control" placeholder="QUITO">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Dirección</label>
-               <input type="text" class="form-control" placeholder="Av. 10 DE AGOSTO N45-12 Y SELVA ALEGRE">
+               <input type="text" name="direccion" class="form-control" placeholder="Av. 10 DE AGOSTO N45-12 Y SELVA ALEGRE">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Vigencia de la Firma</label>
-               <select class="form-control">
+               <select class="form-control" name="vigenciafirma">
                   <option value="">Seleccione Vigencia</option>
                   <option value="1 año">1 Año</option>
                   <option value="2 años">2 Años</option>
@@ -139,35 +139,35 @@
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Foto Cédula Frontal</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_cedulaFront" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Foto Cédula Posterior</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_cedulaBack" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Foto Tipo Selfie</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_selfie" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Copia RUC</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_copiaruc" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Documento Adicional 1</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_adicional1" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Documento Adicional 2</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_adicional2" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Documento Adicional 3</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_adicional3" class="form-control">
             </div>
             <div class="form-group col-md-12">
                <label for="nombre">Documento Adicional 4</label>
-               <input type="file" class="form-control">
+               <input type="file" name="f_adicional4" class="form-control">
             </div>
          </div>
        </div>
