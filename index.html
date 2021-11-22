@@ -9,7 +9,6 @@
    <title>API - AT</title>
 </head>
 <body>
-  
    <div id="app" class="container-fluid">
       <div class="row">
          <div class="col-md-6">
@@ -17,7 +16,6 @@
             <hr>
             <!--TODO: Editar la atributo for=""
             //TODO: Agregar el atributo name en los input -->
-            
             <form action="" id="formu">
                <div class="form-group col-md-12">
                   <label for="">Tipo de Solicitud</label>
@@ -187,8 +185,75 @@
             <p>Primer apellido: {{ apellido1.input }} - {{ apellido1.input.length }} - {{ apellido1.correcto }}</p>
             <p>Segunfo apellido: {{ apellido2.input }} - {{ apellido2.input.length }} - {{ apellido2.correcto }}</p>
          </div>-->
-         
-       </div>
+         <div class="col-md-6">
+            <h1>Datos para la factura electronica</h1>
+            <hr>
+            <form action="">
+               <div class="form-group col-md-12">
+                  <label for="nombre">Vigencia de la Firma</label>
+                  <select class="form-control" name="vigenciafirma">
+                     <option value="">Seleccione Vigencia</option>
+                     <option value="1 año">1 Año</option>
+                     <option value="2 años">2 Años</option>
+                     <option value="3 años">3 Años</option>
+                     <option value="4 años">4 Años</option>
+                     <option value="5 años">5 Años</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Usar los mismos datos ingresados para la factura electronica</label>
+                  <select class="form-control" name="vigenciafirma">
+                     <option value="">Seleccione</option>
+                     <option value="Si">Si</option>
+                     <option value="No">No</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Forma de pago</label>
+                  <select class="form-control" name="vigenciafirma">
+                     <option value="">Seleccione forma de pago</option>
+                     <option value="Transferencia">Transferencia/Depósito</option>
+                     <option value="Pago Online">Pago ONLINE</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-6">
+                  <label for="nombre">RUC/Cédula</label>
+                  <input type="text" name="ciudad" class="form-control" placeholder="RUC o Cédula">
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Nombre completos</label>
+                  <input type="text" name="ciudad" class="form-control" placeholder="Nombres para factura">
+               </div>
+               <div class="form-group col-md-6">
+                  <label for="nombre">Correo</label>
+                  <input type="email" name="eMail" class="form-control" placeholder="prueba@gmail.com">
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Dirección</label>
+                  <input type="text" name="direccion" class="form-control" placeholder="Av. 10 DE AGOSTO N45-12 Y SELVA ALEGRE">
+               </div>
+               <div class="form-group col-md-6">
+                  <label for="nombre">Teléfono</label>
+                  <input type="text" name="telfCelular" class="form-control" placeholder="0912345678">
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Cédula ó  pasaporte del Representante Legal</label>
+                  <input type="file" name="cedulapdf" class="form-control">
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">RUC de la empresa</label>
+                  <input type="file" name="f_copiaruc" class="form-control">
+               </div>
+               <div class="form-group col-md-12">
+                  <label for="nombre">Comentarios</label>
+                  <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+               </div>
+            </form>
+            <div class="form-group col-md-2">
+               <button type="button" class="btn btn-primary">add</button>
+            </div>   
+         </div>
+      </div>
    </div>
 </body>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -200,5 +265,5 @@
    }
 </script>
 <!--<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>-->
-<script src="validation2.js"></script>
+<script src="validation.js"></script>
 </html>
